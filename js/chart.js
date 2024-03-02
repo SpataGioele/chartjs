@@ -1,5 +1,5 @@
 function main() {
-    simpleChart({
+    simpleDataChart({
         canvas: document.getElementById("energy_chart"),
         type: "polarArea",
         labels: [
@@ -62,7 +62,7 @@ function main() {
 }
 
 // functions
-function simpleChart({
+function simpleDataChart({
     canvas,
     type = "",
     labels = [],
