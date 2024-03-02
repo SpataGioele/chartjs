@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- style links -->
+    <link rel="stylesheet" href="./globals.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- fontawesome icons -->
+    
+    <!-- script links -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/chart.js"></script>
+
+    <!-- settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>ChartJS | presentazione</title>
+</head>
+<body>
+    <!-- hero banner start -->
+    <section id="hero_banner" class="grid grid-cols-1 lg:grid-cols-2 py-[20px] lg:pt-[150px] items-center px-[20px]">
+        <!-- colonna sinistra start -->
+        <div class="flex flex-col justify-center items-center lg:items-end lg:pr-[80px] mb-[20px] lg:mb-0">
+            <div class="text-center lg:text-left">
+                <h1 class="capitalize text-[35px] lg:text-[55px] xl:text-[80px] mb-[30px]">
+                    be the savior
+                    <br>
+                    of your future
+                </h1>
+                <p class="w-[80%] lg:w-fit translate-x-[12%] lg:translate-x-[0] text-[var(--secondary-color)] mb-[30px] text-[14px]">
+                    It is long enstablished fact that a reader will be distracted by the
+                    <br>
+                    readable content of a page when looking at its layout
+                </p>
+                <button class="bg-[var(--tertiary-color)] py-3 px-10 rounded-[50px] font-bold">
+                    Explore Report
+                </button>
+            </div>
+        </div>
+        <!-- colonna sinistra end -->
+
+        <!-- colonna destra start -->
+        <div class="flex flex-col justify-center items-center lg:items-start lg:pl-[40px]">
+            <img src="./img/hero_image.png" alt="home image" class="w-[50vw] lg:w-[40vw] h-auto object-cover">
+        </div>
+        <!-- colonna destra end -->
+    </section>
+    <!-- hero banner end -->
+
+    <!-- energy section start -->
+    <section id="energy_section" class="bg-[var(--background-secondary)] grid grid-cols-1 lg:grid-cols-2 items-center px-[20px] py-[20px] lg:py-0">
+        <!-- colonna sinistra start -->
+        <div class="flex flex-col justify-center lg:items-end lg:items-end xl:pr-[80px] mb-[20px] lg:mb-0">
+            <div>
+                <div class="flex items-center gap-2 text-[var(--tertiary-color)] uppercase font-[1.2rem] tracking-widest">
+                    <div class="w-[15px] h-[2px] bg-green-400"></div>
+                    energy
+                </div>
+                <h1 class="capitalize text-[50px] lg:text-[35px] xl:text-[40px] 2xl:text-[50px] mb-[20px]">
+                    energy is our ultimate
+                    <br>
+                    power
+                </h1>
+                <p class="mb-[35px] text-[14px] lg:text-[12px] 2xl:text-[14px] text-[var(--secondary-color)]">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                    <br>
+                    Velit officia consequat duis enim velit mollit.
+                </p>
+                <div class="grid grid-cols-2 mb-[35px] text-[var(--secondary-color)]">
+                    <!-- colonna sinistra start -->
+                    <div class="flex flex-col gap-5">
+                        <div class="flex items-center gap-5">
+                            <i class="fa-solid fa-check"></i>
+                            Nuclear
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <i class="fa-solid fa-check"></i>
+                            Solar Energy
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <i class="fa-solid fa-check"></i>
+                            Gas
+                        </div>
+                    </div>
+                    <!-- colonna sinistra end -->
+
+                    <!-- colonna destra start -->
+                    <div class="flex flex-col gap-5">
+                        <div class="flex items-center gap-5">
+                            <i class="fa-solid fa-check"></i>
+                            Crude
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <i class="fa-solid fa-check"></i>
+                            Renewable
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <i class="fa-solid fa-check"></i>
+                            Coal
+                        </div>
+                    </div>
+                    <!-- colonna destra end -->
+                </div>
+                <button class="bg-[var(--tertiary-color)] py-3 px-10 rounded-[50px] font-bold">
+                    Read More
+                </button>
+            </div>
+        </div>
+        <!-- colonna sinistra end -->
+        
+        <!-- colonna destra start -->
+        <div class="lg:pl-[18px] flex justify-center lg:justify-start items-center mt-[20px] lg:mt-0">
+            <div class="bg-[var(--background-primary)] w-full w-[80%] xl:w-[90%] 2xl:w-[68%] min-h-[50vh] md:h-[65vh] flex justify-center items-center rounded-[16px] p-[40px]">
+                <canvas id="energy_chart"></canvas>
+            </div>
+        </div>
+        <!-- colonna destra end -->
+    </section>
+    <!-- energy section end -->
+
+    <!-- pollution report section start -->
+    <section id="pollution_section" class="flex flex-col justify-center items-center gap-5 py-[20px] px-[20px]">
+        <div class="flex items-center gap-2 text-[var(--tertiary-color)] uppercase font-[1.2rem] tracking-widest">
+            <div class="w-[15px] h-[2px] bg-green-400"></div>
+            pollution report
+        </div>
+        <h1 class="text-[50px] mb-[60px]">How Pollution Affects Our Atmosphere</h1>
+        <div class="w-full lg:w-[50%]">
+            <canvas id="pollution_chart"></canvas>
+        </div>
+    </section>
+    <!-- pollution report section end -->
+</body>
+</html>
