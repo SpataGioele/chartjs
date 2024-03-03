@@ -22,7 +22,7 @@
 </head>
 <body>
     <!-- hero banner start -->
-    <section id="hero_banner" class="grid grid-cols-1 lg:grid-cols-2 py-[20px] lg:pt-[150px] items-center px-[20px]">
+    <section id="hero_banner" class="grid grid-cols-1 lg:grid-cols-2 py-[20px] lg:pt-[150px] items-center px-[20px] relative">
         <!-- colonna sinistra start -->
         <div class="flex flex-col justify-center items-center lg:items-end lg:pr-[80px] mb-[20px] lg:mb-0">
             <div class="text-center lg:text-left">
@@ -45,9 +45,13 @@
 
         <!-- colonna destra start -->
         <div class="flex flex-col justify-center items-center lg:items-start lg:pl-[40px]">
-            <img src="./img/hero_image.png" alt="home image" class="w-[50vw] lg:w-[40vw] h-auto object-cover">
+            <img src="./img/hero_image.png" alt="home image" class="w-[80vw] md:w-[50vw] lg:w-[40vw] h-auto object-cover">
         </div>
         <!-- colonna destra end -->
+
+        <!-- image absolute start -->
+        <img src="https://wordpress.iqonic.design/product/wp/umetric/wp-content/uploads/2022/04/Element1-1.png" alt="decoration circle" class="decoration_circle top-0 left-0 translate-y-[-50%]">
+        <!-- image absolute end -->
     </section>
     <!-- hero banner end -->
 
@@ -123,7 +127,7 @@
     <!-- energy section end -->
 
     <!-- pollution report section start -->
-    <section id="pollution_section" class="flex flex-col justify-center items-center gap-5 py-[20px] px-[20px]">
+    <section id="pollution_section" class="flex flex-col justify-center items-center gap-5 py-[20px] px-[20px] relative">
         <div class="flex items-center gap-2 text-[var(--tertiary-color)] uppercase font-[1.2rem] tracking-widest">
             <div class="w-[15px] h-[2px] bg-[var(--tertiary-color)]"></div>
             pollution report
@@ -132,7 +136,44 @@
         <div class="w-full lg:w-[50%]">
             <canvas id="pollution_chart"></canvas>
         </div>
+
+        <!-- image absolute start -->
+        <img src="https://wordpress.iqonic.design/product/wp/umetric/wp-content/uploads/2022/04/Element1-1.png"
+            alt="decoration circle" class="decoration_circle bottom-0 left-0 hidden lg:block">
+        <img src="https://wordpress.iqonic.design/product/wp/umetric/wp-content/uploads/2022/04/Element1-1.png"
+            alt="decoration circle" class="decoration_circle top-0 right-0 rotate-180 translate-y-[-50%]">
+        <!-- image absolute end -->
     </section>
     <!-- pollution report section end -->
+
+    <!-- activities  section start -->
+    <section id="activities_section" class="bg-[var(--background-secondary)] flex flex-col justify-center items-center gap-5 py-[80px] px-[20px]">
+        <div class="flex items-center gap-2 text-[var(--tertiary-color)] uppercase font-[1.2rem] tracking-widest">
+            <div class="w-[15px] h-[2px] bg-[var(--tertiary-color)]"></div>
+            activities
+        </div>
+        <h1 class="text-[50px] mb-[50px]">What Can We Do?</h1>
+        <div class="w-[95vw] 2xl:w-[65vw] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="activities_card">
+
+            </div>
+            <div class="activities_card">
+            
+            </div>
+            <div class="activities_card md:col-span-2 lg:col-span-1">
+            
+            </div>
+            <div class="activities_card">
+            
+            </div>
+            <div class="activities_card">
+            
+            </div>
+            <div class="activities_card md:col-span-2 lg:col-span-1">
+            
+            </div>
+        </div>
+    </section>
+    <!-- activities section end -->
 </body>
 </html>

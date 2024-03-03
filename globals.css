@@ -6,6 +6,11 @@
     margin: 0;
 }
 
+::selection {
+    background-color: var(--tertiary-color); 
+    color: var(--primary-color); 
+}
+
 /* scrollbar start */
 ::-webkit-scrollbar {
     width: 4px;
@@ -16,14 +21,19 @@
     background-color: var(--tertiary-color);
     border-radius: 5px;
 }
+
+::-webkit-scrollbar-thumb:window-inactive{
+    background-color: transparent;
+}
 /* scrollbar end */
 
 :root {
     --background-primary: #121215;
     --background-secondary: #1f1f1f;
+    --background-tertiary: #252525;
     --primary-color: #fff;
     --secondary-color: #787878;
-    --tertiary-color: #4ade80;
+    --tertiary-color: #3a4c7a;
 }
 
 body {
@@ -42,4 +52,51 @@ section {
 
 .fa-check {
     color: var(--tertiary-color);
+}
+
+.activities_card {
+    width: 100%;
+    min-height: 330px;
+    background-color: var(--background-tertiary);
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.activities_card:hover {
+    transform: translateY(-3%);
+}
+
+.star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 10px 2px white; 
+    z-index: -100;
+}
+
+.decoration_circle {
+    width: 130px;
+    height: 250px;
+    position: absolute;
+    z-index: -1;
+}
+
+@media all and (min-width: 1024px) {
+    .decoration_circle {
+        width: 200px;
+        height: 400px;
+    }
+}
+
+@media all and (min-width: 1536px) {
+    .decoration_circle {
+        width: 300px;
+        height: 600px;
+    }
 }
