@@ -1,6 +1,7 @@
 function main() {
-    generateStars(hero_banner, 30)
-    generateStars(pollution_section, 30)
+    generateStars(document.getElementById("facts_section"), 30)
+    generateStars(document.getElementById("hero_banner"), 30)
+    generateStars(document.getElementById("pollution_section"), 30)
 }
 
 // functions
@@ -10,9 +11,10 @@ function getRandomNumber(min, max) {
 
 function generateStars(section, numStars) {
     if (numStars > 50) return
+    const container = section.getBoundingClientRect()
 
-    let maxHeight = section.clientHeight - 5
-    let maxWidth = window.innerWidth - 5
+    let maxHeight = container.height - 5
+    let maxWidth = container.width - 5
 
     if (maxWidth <= 635)
         numStars -= 15
