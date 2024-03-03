@@ -59,11 +59,39 @@ function main() {
         data3: [0, 80, 0, 130, 45, 160],
         fill: true,
     })
+
+    simpleDataChart({
+        canvas: document.getElementById("facts_chart"),
+        type: "bar",
+        labels: [
+            "Nuclear",
+            "Solar Energy",
+            "Gas",
+            "Crude",
+            "Renewable",
+            "Coal",
+        ],
+        label: "energy",
+        data: [50, 60, 74, 53, 57, 72],
+        borderWidth: 1,
+        scales: {
+            x: {
+                grid: {
+                    color: "#787878",
+                },
+                ticks: {
+                    backdropColor: "#121215",
+                    color: "#787878",
+                },
+            },
+        },
+        elements: null,
+    })
 }
 
 // functions
 function simpleDataChart({
-    canvas,
+    canvas = null,
     type = "",
     labels = [],
     label = "",
@@ -85,6 +113,7 @@ function simpleDataChart({
             ],
         },
         options: {
+            indexAxis: 'y',
             scales: scales,
             elements: elements,
             plugins: {
