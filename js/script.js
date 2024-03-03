@@ -1,5 +1,6 @@
 function main() {
-    generateStars(100)
+    generateStars(hero_banner, 30)
+    generateStars(pollution_section, 30)
 }
 
 // functions
@@ -7,8 +8,8 @@ function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-function generateStars(numStars) {
-    if (numStars > 200) return
+function generateStars(section, numStars) {
+    if (numStars > 50) return
 
     for (let i = 0; i < numStars; i++) {
         // creazione div stella
@@ -16,8 +17,8 @@ function generateStars(numStars) {
         star.classList.add("star")
 
         // posizione casuale
-        const topPos = getRandomNumber(5, document.documentElement.scrollHeight - 100) + "px"
-        const leftPos = getRandomNumber(5, window.innerWidth) + "px"
+        const topPos = getRandomNumber(5, section.clientHeight) + "px"
+        const leftPos = getRandomNumber(5, window.innerWidth - 5) + "px"
         star.style.top = topPos
         star.style.left = leftPos
 
@@ -26,7 +27,7 @@ function generateStars(numStars) {
         star.style.width = size
         star.style.height = size
 
-        document.body.appendChild(star)
+        section.appendChild(star)
     }
 }
 

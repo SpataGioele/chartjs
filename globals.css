@@ -70,6 +70,14 @@ section {
     transform: translateY(-3%);
 }
 
+.decoration_circle {
+    width: 130px;
+    height: 250px;
+    position: absolute;
+    z-index: -1;
+}
+
+/* star start */
 .star {
     position: absolute;
     width: 10px;
@@ -78,13 +86,7 @@ section {
     background-color: #fff;
     box-shadow: 0 0 10px 2px white; 
     z-index: -100;
-}
-
-.decoration_circle {
-    width: 130px;
-    height: 250px;
-    position: absolute;
-    z-index: -1;
+    opacity: 0.3;
 }
 
 @media all and (min-width: 1024px) {
@@ -100,3 +102,4 @@ section {
         height: 600px;
     }
 }
+/* star end */
