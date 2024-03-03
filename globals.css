@@ -46,6 +46,11 @@ body {
     letter-spacing: 1px;
 }
 
+body, html {
+    
+    scroll-behavior: smooth !important;
+}
+
 section {
     width: 100vw;
     min-height: 100vh;
