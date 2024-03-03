@@ -30,8 +30,8 @@ function main() {
     tripleDataChart({
         canvas: document.getElementById("pollution_chart"),
         type: "line",
-        labels: ["1991", "1992", "1993", "1994", "1995", "1996"],
-        label: "Road Transports",
+        labels: ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno"],
+        label: "Download",
         data: [35, 100, 40, 80, 158, 70],
         borderWidth: 3,
         scales: {
@@ -53,7 +53,7 @@ function main() {
                 tension: 0.4,
             },
         },
-        label2: "Industries",
+        label2: "Revenue",
         data2: [40, 80, 35, 160, 30, 85],
         label3: "Others",
         data3: [0, 80, 0, 130, 45, 160],

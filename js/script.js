@@ -11,14 +11,20 @@ function getRandomNumber(min, max) {
 function generateStars(section, numStars) {
     if (numStars > 50) return
 
+    let maxHeight = section.clientHeight - 5
+    let maxWidth = window.innerWidth - 5
+
+    if (maxWidth <= 635)
+        numStars -= 15
+
     for (let i = 0; i < numStars; i++) {
         // creazione div stella
         const star = document.createElement("div")
         star.classList.add("star")
 
         // posizione casuale
-        const topPos = getRandomNumber(5, section.clientHeight) + "px"
-        const leftPos = getRandomNumber(5, window.innerWidth - 5) + "px"
+        const topPos = getRandomNumber(5, maxHeight) + "px"
+        const leftPos = getRandomNumber(5, maxWidth) + "px"
         star.style.top = topPos
         star.style.left = leftPos
 

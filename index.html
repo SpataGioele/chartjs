@@ -3,6 +3,7 @@
 <head>
     <!-- style links -->
     <link rel="stylesheet" href="./globals.css">
+    <link rel="stylesheet" href="./css/loading_animation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- fontawesome icons -->
@@ -10,6 +11,7 @@
     <!-- script links -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/loading_animation.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/chart.js"></script>
 
@@ -21,24 +23,43 @@
     <title>ChartJS | presentazione</title>
 </head>
 <body>
+    <!-- loading animation start -->
+    <div class="loading_animation">
+        <h1>Cooking in progress..</h1>
+        <div id="cooking">
+            <div id="area">
+                <div id="sides">
+                    <div id="pan"></div>
+                    <div id="handle"></div>
+                </div>
+                <div id="pancake">
+                    <div id="pastry"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- loading animation end -->
+
     <!-- hero banner start -->
     <section id="hero_banner" class="grid grid-cols-1 lg:grid-cols-2 py-[20px] lg:pt-[150px] items-center px-[20px] relative">
         <!-- colonna sinistra start -->
         <div class="flex flex-col justify-center items-center lg:items-end lg:pr-[80px] mb-[20px] lg:mb-0">
             <div class="text-center lg:text-left">
                 <h1 class="capitalize text-[35px] lg:text-[55px] xl:text-[80px] mb-[30px]">
-                    be the savior
+                    embrace honkai
                     <br>
-                    of your future
+                    star rail
                 </h1>
                 <p class="w-[80%] lg:w-fit translate-x-[12%] lg:translate-x-[0] text-[var(--secondary-color)] mb-[30px] text-[14px]">
-                    It is long enstablished fact that a reader will be distracted by the
+                    È un fatto, da tempo consolidato, che un giocatore verrà rapito
                     <br>
-                    readable content of a page when looking at its layout
+                    dall'incredibile forza e bellezza di questo gioco (ludopatia).
                 </p>
-                <button class="bg-[var(--tertiary-color)] py-3 px-10 rounded-[50px] font-bold">
-                    Explore Report
-                </button>
+                <a href="https://hsr.hoyoverse.com/en-us/" target="_blank">
+                    <button class="bg-[var(--tertiary-color)] py-3 px-10 rounded-[50px] font-bold">
+                        Pagina Ufficiale
+                    </button>
+                </a>
             </div>
         </div>
         <!-- colonna sinistra end -->
@@ -56,23 +77,23 @@
     <!-- hero banner end -->
 
     <!-- energy section start -->
-    <section id="energy_section" class="bg-[var(--background-secondary)] grid grid-cols-1 lg:grid-cols-2 items-center px-[20px] py-[20px] lg:py-0">
+    <section id="energy_section" class="bg-[var(--background-secondary)] grid grid-cols-1 lg:grid-cols-2 items-center px-[20px] py-[50px] lg:py-0">
         <!-- colonna sinistra start -->
         <div class="flex flex-col justify-center lg:items-end lg:items-end xl:pr-[80px] mb-[20px] lg:mb-0">
             <div>
                 <div class="flex items-center gap-2 text-[var(--tertiary-color)] uppercase font-[1.2rem] tracking-widest">
                     <div class="w-[15px] h-[2px] bg-[var(--tertiary-color)]"></div>
-                    energy
+                    gacha
                 </div>
                 <h1 class="capitalize text-[50px] lg:text-[35px] xl:text-[40px] 2xl:text-[50px] mb-[20px]">
-                    energy is our ultimate
+                    i gacha sono
                     <br>
-                    power
+                    ludopatia
                 </h1>
                 <p class="mb-[35px] text-[14px] lg:text-[12px] 2xl:text-[14px] text-[var(--secondary-color)]">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                    Con Honkai Star Rail diventerete ludopatici
                     <br>
-                    Velit officia consequat duis enim velit mollit.
+                    e potrete spendere i vostri soldi in modo profiquo!
                 </p>
                 <div class="grid grid-cols-2 mb-[35px] text-[var(--secondary-color)]">
                     <!-- colonna sinistra start -->
@@ -130,9 +151,9 @@
     <section id="pollution_section" class="flex flex-col justify-center items-center gap-5 py-[20px] px-[20px] relative">
         <div class="flex items-center gap-2 text-[var(--tertiary-color)] uppercase font-[1.2rem] tracking-widest">
             <div class="w-[15px] h-[2px] bg-[var(--tertiary-color)]"></div>
-            pollution report
+            download report
         </div>
-        <h1 class="text-[50px] mb-[60px]">How Pollution Affects Our Atmosphere</h1>
+        <h1 class="text-[50px] mb-[60px] capitalize">HSR trends report</h1>
         <div class="w-full lg:w-[50%]">
             <canvas id="pollution_chart"></canvas>
         </div>
@@ -152,7 +173,7 @@
             <div class="w-[15px] h-[2px] bg-[var(--tertiary-color)]"></div>
             activities
         </div>
-        <h1 class="text-[50px] mb-[50px]">What Can We Do?</h1>
+        <h1 class="text-[50px] mb-[50px]">What Can We Do In Game?</h1>
         <div class="w-[95vw] 2xl:w-[65vw] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="activities_card">
 

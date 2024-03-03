@@ -42,6 +42,7 @@ body {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     overflow-x: hidden;
+    overflow-y: hidden;
     letter-spacing: 1px;
 }
 
