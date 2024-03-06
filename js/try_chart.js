@@ -13,35 +13,35 @@ function main() {
             ],
             datasets: [
                 {
-                    label: "energy",
+                    label: "2000",
                     data: [50, 60, 74, 53, 57, 72],
                     borderWidth: 1,
                 },
                 {
-                    label: "energy",
+                    label: "2024",
                     data: [55, 30, 24, 83, 57, 62],
                     borderWidth: 1,
                 },
             ],
         },
         options: {
-            indexAxis: "y",
+            indexAxis: "y", // le barre partono dall'asse y
             scales: {
-                x: {
-                    grid: {
+                x: {    // asse x
+                    grid: { // grid dell'asse x
                         color: "#787878",
                     },
-                    ticks: {
-                        backdropColor: "#121215",
-                        color: "#787878",
+                    ticks: {    // le etichette generate di valori inseriti
+                        backdropColor: "#121215",   // il colore di sfondo
+                        color: "#787878",   // il colore del testo
                     },
                 },
             },
             plugins: {
-                legend: {
-                    position: "bottom",
+                legend: {   // legenda
+                    position: "bottom", // sotto il grafico
                     labels: {
-                        usePointStyle: true,
+                        usePointStyle: true,    // le etichette sono a cerchio, di solito sono a rettangolo
                     },
                 },
             },
@@ -62,18 +62,21 @@ function main() {
             ],
             datasets: [
                 {
+                    // prima serie di dati
                     label: "Download",
                     data: [35, 100, 40, 80, 158, 70],
                     borderWidth: 3,
-                    fill: true,
+                    fill: true, // copre l'area sottostante alle linee
                 },
                 {
+                    // seconda serie di dati
                     label: "Revenue",
                     data: [40, 80, 35, 160, 30, 85],
                     borderWidth: 3,
                     fill: true,
                 },
                 {
+                    // terza serie di dati
                     label: "Others",
                     data: [0, 80, 0, 130, 45, 160],
                     borderWidth: 3,
@@ -83,22 +86,20 @@ function main() {
         },
         options: {
             scales: {
-                x: {
-                    grid: {
-                        color: "transparent",
+                x: {    // asse x
+                    grid: { // griglia asse x
+                        color: "transparent",   // colore della griglia trasparente
                     },
-                    beginAtZero: true,
                 },
-                y: {
-                    grid: {
-                        color: "#787878",
+                y: {    // asse y
+                    grid: { // griglia asse y
+                        color: "#787878",   // colore griglia
                     },
-                    beginAtZero: true,
                 },
             },
             elements: {
-                line: {
-                    tension: 0.4,
+                line: { // linee
+                    tension: 0.4,   // linea  curva "smooth"
                 },
             },
             plugins: {
