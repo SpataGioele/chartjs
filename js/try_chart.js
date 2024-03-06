@@ -99,7 +99,7 @@ function main() {
             },
             elements: {
                 line: { // linee
-                    tension: 0.4,   // linea  curva "smooth"
+                    tension: 0.4,   // linea curva "smooth" (0.3 - 0.5)
                 },
             },
             plugins: {
