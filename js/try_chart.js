@@ -17,6 +17,11 @@ function main() {
                     data: [50, 60, 74, 53, 57, 72],
                     borderWidth: 1,
                 },
+                {
+                    label: "energy",
+                    data: [55, 30, 24, 83, 57, 62],
+                    borderWidth: 1,
+                },
             ],
         },
         options: {
