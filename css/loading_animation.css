@@ -16,7 +16,7 @@
   background-color: var(--background-primary);
   z-index: 99;
   font-size: 2rem;
-  transition: 3s ease-out;
+  transition: 2s linear;
 }
 
 .loading_animation p {

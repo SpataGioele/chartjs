@@ -15,7 +15,7 @@
     border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb:window-inactive{
+::-webkit-scrollbar-thumb:window-inactive {
     background-color: transparent;
 }
 /* scrollbar end */

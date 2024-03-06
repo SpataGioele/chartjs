@@ -3,14 +3,14 @@ function main() {
         canvas: document.getElementById("energy_chart"),
         type: "polarArea",
         labels: [
-            "Nuclear",
-            "Solar Energy",
-            "Gas",
-            "Crude",
-            "Renewable",
-            "Coal",
+            "Delusione",
+            "Disgusto",
+            "Depressione",
+            "Malinconia",
+            "Tristezza",
+            "Strazio",
         ],
-        label: "energy",
+        label: "sentimenti",
         data: [50, 60, 74, 53, 57, 72],
         borderWidth: 1,
         scales: {
@@ -30,9 +30,16 @@ function main() {
     tripleDataChart({
         canvas: document.getElementById("pollution_chart"),
         type: "line",
-        labels: ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno"],
+        labels: [
+            "ottobre",
+            "novembre",
+            "dicembre",
+            "gennaio",
+            "febbraio",
+            "marzo",
+        ],
         label: "Download",
-        data: [35, 100, 40, 80, 158, 70],
+        data: [200000, 307400, 700000, 430000, 289000, 806000],
         borderWidth: 3,
         scales: {
             x: {
@@ -54,9 +61,9 @@ function main() {
             },
         },
         label2: "Revenue",
-        data2: [40, 80, 35, 160, 30, 85],
+        data2: [305000, 507400, 900000, 430000, 489000, 906000],
         label3: "Others",
-        data3: [0, 80, 0, 130, 45, 160],
+        data3: [405000, 400000, 107400, 389000, 130000, 506000],
         fill: true,
     })
 
@@ -64,15 +71,15 @@ function main() {
         canvas: document.getElementById("facts_chart"),
         type: "bar",
         labels: [
-            "Nuclear",
-            "Solar Energy",
-            "Gas",
-            "Crude",
-            "Renewable",
-            "Coal",
+            "ottobre",
+            "novembre",
+            "dicembre",
+            "gennaio",
+            "febbraio",
+            "marzo",
         ],
-        label: "energy",
-        data: [50, 60, 74, 53, 57, 72],
+        label: "tempo di gioco medio (h)",
+        data: [5.1, 1.9, 3.3, 2.8, 5.2, 4.4],
         borderWidth: 1,
         scales: {
             x: {

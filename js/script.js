@@ -1,7 +1,7 @@
 function main() {
-    generateStars(document.getElementById("facts_section"), 30)
-    generateStars(document.getElementById("hero_banner"), 30)
-    generateStars(document.getElementById("pollution_section"), 30)
+    generateStars(document.getElementById("facts_section"), 35)
+    generateStars(document.getElementById("hero_banner"), 35)
+    generateStars(document.getElementById("pollution_section"), 35)
 }
 
 // functions
@@ -31,7 +31,7 @@ function generateStars(section, numStars) {
         star.style.left = leftPos
 
         // dimensioni (uguali sia in larghezza che in altezza)
-        const size = getRandomNumber(5, 15) + "px"
+        const size = getRandomNumber(5, 10) + "px"
         star.style.width = size
         star.style.height = size
 

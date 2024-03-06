@@ -7,7 +7,7 @@ function loading_animation() {
         
         setTimeout(() => {
             loader.style.display = "none"
-        }, 3000)
+        }, 2000)
     }, 3000)
 }
 

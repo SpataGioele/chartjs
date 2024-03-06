@@ -71,6 +71,8 @@ section {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
 }
 
 .activities_card:hover {

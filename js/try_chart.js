@@ -43,6 +43,7 @@ function main() {
         },
     })
 
+    // secondo chart
     new Chart(document.getElementById("try_second"), {
         type: "line",
         data: {
