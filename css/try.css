@@ -4,6 +4,22 @@
     margin: 0;
 }
 
+/* scrollbar start */
+::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--tertiary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:window-inactive{
+    background-color: transparent;
+}
+/* scrollbar end */
+
 :root {
     --background-primary: #121215;
     --background-secondary: #1f1f1f;
