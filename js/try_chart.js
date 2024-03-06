@@ -1,7 +1,6 @@
 function main() {
     // primo chart
-    const ctx = document.getElementById("try_one")
-    new Chart(ctx, {
+    new Chart(document.getElementById("try_one"), {
         type: "bar",
         data: {
             labels: [
@@ -44,7 +43,68 @@ function main() {
         },
     })
 
-
+    new Chart(document.getElementById("try_second"), {
+        type: "line",
+        data: {
+            labels: [
+                "gennaio",
+                "febbraio",
+                "marzo",
+                "aprile",
+                "maggio",
+                "giugno",
+            ],
+            datasets: [
+                {
+                    label: "Download",
+                    data: [35, 100, 40, 80, 158, 70],
+                    borderWidth: 3,
+                    fill: true,
+                },
+                {
+                    label: "Revenue",
+                    data: [40, 80, 35, 160, 30, 85],
+                    borderWidth: 3,
+                    fill: true,
+                },
+                {
+                    label: "Others",
+                    data: [0, 80, 0, 130, 45, 160],
+                    borderWidth: 3,
+                    fill: true,
+                },
+            ],
+        },
+        options: {
+            scales: {
+                x: {
+                    grid: {
+                        color: "transparent",
+                    },
+                    beginAtZero: true,
+                },
+                y: {
+                    grid: {
+                        color: "#787878",
+                    },
+                    beginAtZero: true,
+                },
+            },
+            elements: {
+                line: {
+                    tension: 0.4,
+                },
+            },
+            plugins: {
+                legend: {
+                    position: "bottom",
+                    labels: {
+                        usePointStyle: true,
+                    },
+                },
+            },
+        },
+    })
 }
 
 document.addEventListener("DOMContentLoaded", main)
